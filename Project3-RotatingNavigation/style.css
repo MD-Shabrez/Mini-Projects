@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: rgb(39, 39, 39);
+}
+
+.rotating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(246, 249, 255);
+    transition: all 0.5s ease;
+    transform-origin: 0 0;
+}
+
+.display-container {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.nav {
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0.5rem 0;
+}
+
+p {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+blockquote {
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+}
+
+img {
+    margin: 1rem 0;
+    border-radius: 0.7rem;
+    height: 500px;
+    width: 100%;
+    background: center/cover;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.nav.toggler {
+    position: fixed;
+    top: -50px;
+    left: -50px;
+    background-color: rgb(255, 102, 102);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.nav.toggler i {
+    position: fixed;
+    top: 15px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+
+i {
+    margin: 0 0.7rem;
+}
+
+.nav:hover {
+    cursor: pointer;
+}
+
+.nav {
+    transition: transform 0.5s ease-in;
+}
+
+.none {
+    display: none;
+}
+
+.home {
+    position: fixed;
+    top: 550px;
+    left: 30px;
+    transform: translateX(-200%);
+}
+
+.about {
+    position: fixed;
+    top: 600px;
+    left: 50px;
+    transform: translateX(-200%);
+}
+
+.contact {
+    position: fixed;
+    top: 650px;
+    left: 80px;
+    transform: translateX(-200%);
+}
+
+.rotate {
+    transform: rotateZ(-20deg);
+}
+
+.translate {
+    transform: translateX(0px);
+}
+
+@media (max-width: 700px) {
+    .display-container {
+        width: 80%;
+    }
+
+    img {
+        height: 200px;
+    }
+}
