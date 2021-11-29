@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: rgb(93, 84, 218);
+}
+
+.content-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgb(70, 64, 158);
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 10px 1px rgb(70, 64, 158);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.hidden-search-container label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hidden-search-container label:hover {
+    cursor: pointer;
+}
+
+.hidden-search-container i {
+    font-size: 1.25rem;
+    margin: 0 10px;
+}
+
+.hidden-search-container input {
+    height: 100%;
+    width: 0;
+    border: none;
+    font-size: 1.1rem;
+    background-color: #f7f7f7;
+    transition: all 0.2s ease;
+}
+
+.hidden-search-container input:focus {
+    outline: none;
+}
+
+#query.width-present {
+    margin: 10px;
+    width: calc(100% - 40px);
+}
+
+.hidden-search-container.width-present {
+    width: 225px;
+}
